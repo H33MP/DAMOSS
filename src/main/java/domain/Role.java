@@ -6,6 +6,12 @@ public class Role {
 
 	private String NameRole;
 
+	private Long PermitionId;
+
+	private Permition Permition;
+
+	private String Description;
+
 	public Role() {
 	}
 
@@ -13,9 +19,11 @@ public class Role {
 		this.NameRole = NameRole;
 	}
 
-	public Role(Long id, String NameRole) {
+	public Role(Long id, String NameRole, Long PermitionId, String Description) {
 		this.id = id;
 		this.NameRole = NameRole;
+		this.PermitionId = PermitionId;
+		this.Description = Description;
 	}
 
 	public Long getId() {
@@ -32,6 +40,18 @@ public class Role {
 
 	public void setNamerole(String NameRole) {
 		this.NameRole = NameRole;
+	}
+
+	public String getDescription(){
+		return Description;
+	}
+
+	public Permition Permition(){
+		return Permition;
+	}
+
+	public String get_Permition(){
+		return Permition.get_NamePermition();
 	}
 
 	@Override

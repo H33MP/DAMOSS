@@ -50,6 +50,10 @@ public class User {
 	public void set_Status(String Status) {
 		this.Status = Status;
 	}
+
+	public void set_Password(String Password){
+		this.Password = Password;
+	}
 	
 	@Override
 	public String toString() {
